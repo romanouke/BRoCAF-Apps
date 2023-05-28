@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B47D55"
+    android:textAlignment="center"
+    tools:context=".TampilanAwal_activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="247dp"
+        android:layout_height="168dp"
+        app:srcCompat="@drawable/cloud"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="81dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="90dp"
+        android:layout_height="87dp"
+        app:srcCompat="@drawable/panda1"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="-0.02"
+        android:text="Halo, \nSelamat Datang"
+        android:textColor="#3E230F"
+        android:textSize="60px"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,MissingConstraints,PxUsage"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="260dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical"
+        app:circularflow_radiusInDP="20dp"
+        tools:ignore="MissingConstraints,VisualLintBounds"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="262dp"
+        android:background="@drawable/bg_tamp"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk Sebagai"
+            android:textAlignment="center"
+            android:textColor="#3E230F"
+            android:textSize="60px"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            tools:ignore="HardcodedText,PxUsage" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFBA88"
+            app:srcCompat="@drawable/tombol1p"
+            tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFBA88"
+            app:srcCompat="@drawable/tombol1k"
+            tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
