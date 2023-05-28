@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B47D55"
+    android:backgroundTint="#B47D55"
     tools:context=".LoginActivity">
 
     <ImageView
@@ -13,9 +14,9 @@
         android:layout_width="457dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/ellipse_1"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-23dp"
-        tools:layout_editor_absoluteY="-159dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="-159dp" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -76,15 +77,38 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="#3E230F" />
 
-        <Button
-            android:id="@+id/button"
+        <ImageButton
+            android:id="@+id/imageButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#3E230F"
-            android:backgroundTint="#3E230F"
-            android:text="Masuk" />
+            android:background="#B47D55"
+            app:srcCompat="@drawable/tmblmsk"
+            tools:ignore="SpeakableTextPresentCheck" />
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum punya akun?"
+        android:textColor="#3E230F"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="675dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#B47D55"
+        android:text="Daftar"
+        android:textColor="#3E230F"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="666dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
