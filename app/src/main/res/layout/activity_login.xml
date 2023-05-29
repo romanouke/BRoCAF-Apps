@@ -108,7 +108,7 @@
         android:backgroundTint="#B47D55"
         android:text="Daftar"
         android:textColor="#3E230F"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
         tools:layout_editor_absoluteX="228dp"
         tools:layout_editor_absoluteY="666dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
