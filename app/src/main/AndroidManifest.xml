@@ -30,9 +30,6 @@
             android:name=".DaftarStokBahanActivity"
             android:exported="false" />
         <activity
-            android:name=".PHalaman_Utama_activity"
-            android:exported="false" />
-        <activity
             android:name=".RegisterasiActivity"
             android:exported="false" />
         <activity
