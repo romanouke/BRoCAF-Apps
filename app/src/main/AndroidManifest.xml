@@ -12,6 +12,18 @@
         android:theme="@style/Theme.BRoCAF"
         tools:targetApi="31">
         <activity
+            android:name=".HotDrinksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SquashAndFloatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MakananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BobaActivity"
+            android:exported="false" />
+        <activity
             android:name=".DaftarStokBahanActivity"
             android:exported="false" />
         <activity
