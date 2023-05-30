@@ -12,13 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:letterSpacing="0.02"
-        android:text="< HOT DRINKS"
+        android:text="HOT DRINKS"
         android:textColor="#542D10"
         android:textSize="25sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="36dp" />
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="32dp" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -76,6 +76,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/tmblplus"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="340dp"
         tools:layout_editor_absoluteY="204dp" />
 
@@ -85,7 +86,18 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/tmblblj"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="327dp"
         tools:layout_editor_absoluteY="647dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="21dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/path"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="32dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

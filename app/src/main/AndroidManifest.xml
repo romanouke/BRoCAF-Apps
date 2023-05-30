@@ -12,6 +12,9 @@
         android:theme="@style/Theme.BRoCAF"
         tools:targetApi="31">
         <activity
+            android:name=".menu_activity"
+            android:exported="false" />
+        <activity
             android:name=".HotDrinksActivity"
             android:exported="false" />
         <activity
