@@ -48,7 +48,7 @@ public class RegisterasiActivity extends AppCompatActivity {
                 reference.child(username).setValue(dataClass);
 
                 Toast.makeText(RegisterasiActivity.this, "Anda Berhasil Membuat", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(RegisterasiActivity.this, LoginActivity.class);
+                Intent intent = new Intent(RegisterasiActivity.this, TampilanAwal_activity.class);
                 startActivity(intent);
             }
         });
