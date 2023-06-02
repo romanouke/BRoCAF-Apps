@@ -12,6 +12,18 @@
         android:theme="@style/Theme.BRoCAF"
         tools:targetApi="31">
         <activity
+            android:name=".transaksi_berhasil_activity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_matcha_activity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_mango_activity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_nasi_ayam_activity"
+            android:exported="false" />
+        <activity
             android:name=".menu_activity"
             android:exported="false" />
         <activity

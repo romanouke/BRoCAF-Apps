@@ -225,8 +225,8 @@
         android:id="@+id/imageButton9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="244dp" />
 
@@ -234,8 +234,8 @@
         android:id="@+id/imageButton10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_clear_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="273dp"
         tools:layout_editor_absoluteY="244dp" />
 
@@ -243,8 +243,8 @@
         android:id="@+id/imageButton11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="306dp" />
 
@@ -252,8 +252,8 @@
         android:id="@+id/imageButton13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_clear_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="273dp"
         tools:layout_editor_absoluteY="306dp" />
 
@@ -261,8 +261,8 @@
         android:id="@+id/imageButton14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck"
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="358dp" />
 
@@ -270,8 +270,8 @@
         android:id="@+id/imageButton15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_clear_24"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
         tools:layout_editor_absoluteX="273dp"
         tools:layout_editor_absoluteY="358dp" />
 
@@ -279,8 +279,8 @@
         android:id="@+id/imageButton16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="412dp" />
 
@@ -288,8 +288,8 @@
         android:id="@+id/imageButton17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_clear_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="273dp"
         tools:layout_editor_absoluteY="412dp" />
 
@@ -297,8 +297,8 @@
         android:id="@+id/imageButton18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="467dp" />
 
@@ -306,8 +306,8 @@
         android:id="@+id/imageButton19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_clear_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="273dp"
         tools:layout_editor_absoluteY="467dp" />
 
@@ -315,8 +315,8 @@
         android:id="@+id/imageButton20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="523dp" />
 
@@ -324,8 +324,8 @@
         android:id="@+id/imageButton21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_clear_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="273dp"
         tools:layout_editor_absoluteY="523dp" />
 
@@ -333,8 +333,8 @@
         android:id="@+id/imageButton22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="580dp" />
 
@@ -342,8 +342,8 @@
         android:id="@+id/imageButton23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_clear_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="273dp"
         tools:layout_editor_absoluteY="580dp" />
 
@@ -351,8 +351,8 @@
         android:id="@+id/imageButton24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="634dp" />
 
@@ -360,8 +360,8 @@
         android:id="@+id/imageButton25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:srcCompat="@drawable/baseline_clear_24"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="273dp"
         tools:layout_editor_absoluteY="634dp" />
 
