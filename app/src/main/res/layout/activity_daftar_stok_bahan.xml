@@ -5,7 +5,7 @@
     android:id="@+id/loginActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="DaftarStokBahanFragmentActivity">
+    tools:context=".DaftarStokBahanActivity">
 
     <ImageView
         android:layout_width="359dp"
@@ -222,7 +222,7 @@
         tools:layout_editor_absoluteY="634dp" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/addButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/baseline_add_24"
@@ -240,7 +240,7 @@
         tools:layout_editor_absoluteY="244dp" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/addButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/baseline_add_24"
@@ -258,7 +258,7 @@
         tools:layout_editor_absoluteY="306dp" />
 
     <ImageButton
-        android:id="@+id/imageButton14"
+        android:id="@+id/addButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/baseline_add_24"
@@ -276,7 +276,7 @@
         tools:layout_editor_absoluteY="358dp" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/addButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/baseline_add_24"
@@ -294,7 +294,7 @@
         tools:layout_editor_absoluteY="412dp" />
 
     <ImageButton
-        android:id="@+id/imageButton18"
+        android:id="@+id/addButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/baseline_add_24"
@@ -312,7 +312,7 @@
         tools:layout_editor_absoluteY="467dp" />
 
     <ImageButton
-        android:id="@+id/imageButton20"
+        android:id="@+id/addButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/baseline_add_24"
@@ -330,7 +330,7 @@
         tools:layout_editor_absoluteY="523dp" />
 
     <ImageButton
-        android:id="@+id/imageButton22"
+        android:id="@+id/addButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/baseline_add_24"
@@ -348,7 +348,7 @@
         tools:layout_editor_absoluteY="580dp" />
 
     <ImageButton
-        android:id="@+id/imageButton24"
+        android:id="@+id/addButton8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/baseline_add_24"
