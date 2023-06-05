@@ -13,19 +13,22 @@
         android:id="@+id/imageView3"
         android:layout_width="457dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="356dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:srcCompat="@drawable/ellipse_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-23dp"
-        tools:layout_editor_absoluteY="-159dp" />
+        tools:layout_editor_absoluteX="-23dp" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"
         app:srcCompat="@drawable/logo_brownice"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="25dp" />
+        tools:layout_editor_absoluteX="83dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -97,18 +100,25 @@
         android:layout_height="wrap_content"
         android:text="Belum punya akun?"
         android:textColor="#3E230F"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="675dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.593"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="99dp"
         android:layout_height="38dp"
+        android:layout_marginEnd="72dp"
         android:backgroundTint="#B47D55"
         android:text="Daftar"
         android:textColor="#3E230F"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="666dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.638"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,49 +16,58 @@
         android:textColor="#542D10"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="77dp" />
+        app:layout_constraintBottom_toTopOf="@+id/Button_Boba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/Button_Boba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/boba"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="123dp" />
 
     <ImageButton
         android:id="@+id/Button_Food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/Button_Boba"
+        app:layout_constraintTop_toBottomOf="@+id/boba"
         app:srcCompat="@drawable/food"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="123dp" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/Button_Drink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/Button_Hotdrink"
+        app:layout_constraintStart_toEndOf="@+id/Button_Food"
+        app:layout_constraintTop_toBottomOf="@+id/boba"
         app:srcCompat="@drawable/drink"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="214dp"
-        tools:layout_editor_absoluteY="123dp" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/Button_Hotdrink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
         android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boba"
         app:srcCompat="@drawable/hotdrink"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="311dp"
-        tools:layout_editor_absoluteY="123dp" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView8"
@@ -69,26 +78,32 @@
         android:textColor="#542D10"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Boba"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="424dp"
         android:layout_height="459dp"
         android:background="#B47D55"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="272dp"
-        tools:ignore="MissingConstraints"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"></LinearLayout>
 
     <ImageView
         android:id="@+id/rectangleBoba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bgputih"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="283dp" />
 
     <ImageView
@@ -137,9 +152,9 @@
         android:background="@android:color/transparent"
         android:minWidth="48dp"
         android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleBoba"
         app:srcCompat="@drawable/tmblplus"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="355dp"
         tools:layout_editor_absoluteY="390dp" />
 
     <ImageView

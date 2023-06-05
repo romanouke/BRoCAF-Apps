@@ -11,33 +11,45 @@
         android:id="@+id/boba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
         android:letterSpacing="0.02"
         android:text="HOT DRINKS"
         android:textColor="#542D10"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintBottom_toTopOf="@+id/rectangleBoba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/rectangleBoba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165"
         app:srcCompat="@drawable/bgputih"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="94dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/matchaBoba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
         android:text="Hot Chocolate"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="113dp" />
+        app:layout_constraintBottom_toTopOf="@+id/popular"
+        app:layout_constraintEnd_toStartOf="@+id/imgBoba"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/rectangleBoba"
+        app:layout_constraintTop_toTopOf="@+id/rectangleBoba"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/popular"
@@ -46,18 +58,21 @@
         android:text="Persediaan Habis"
         android:textColor="@android:color/holo_red_light"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="132dp" />
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="131dp" />
 
     <TextView
         android:id="@+id/priceBoba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:text="Rp. 15.500"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleBoba"
+        app:layout_constraintStart_toStartOf="@+id/rectangleBoba"
+        app:layout_constraintTop_toBottomOf="@+id/popular"
+        app:layout_constraintVertical_bias="0.87"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imgBoba"
@@ -65,39 +80,53 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleBoba"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleBoba"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toEndOf="@+id/popular"
+        app:layout_constraintTop_toTopOf="@+id/rectangleBoba"
+        app:layout_constraintVertical_bias="0.468"
         app:srcCompat="@drawable/img_10"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="113dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/ButtonPlusBoba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="@+id/rectangleBoba"
+        app:layout_constraintTop_toTopOf="@+id/rectangleBoba"
+        app:layout_constraintVertical_bias="0.194"
         app:srcCompat="@drawable/tmblplus"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="340dp"
-        tools:layout_editor_absoluteY="204dp" />
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/keranjang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/tmblblj"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="327dp"
-        tools:layout_editor_absoluteY="647dp" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="21dp"
         android:layout_height="36dp"
         android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/rectangleBoba"
+        app:layout_constraintEnd_toStartOf="@+id/boba"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586"
         app:srcCompat="@drawable/path"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="32dp" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
