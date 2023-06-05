@@ -132,13 +132,15 @@
         android:text="Nama Pemesan:"
         android:textColor="#542D10"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="397dp"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText"
         android:layout_width="362dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:hint="Ketik nama pemesan"
         android:singleLine="false"
@@ -157,7 +159,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
         app:layout_constraintVertical_bias="0.203"
-        app:srcCompat="@drawable/simpan" />
+        app:srcCompat="@drawable/simpan"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -171,7 +174,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/kmbli" />
+        app:srcCompat="@drawable/kmbli"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/imageButton16"
@@ -182,6 +186,7 @@
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/bayar" />
+        app:srcCompat="@drawable/bayar"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
