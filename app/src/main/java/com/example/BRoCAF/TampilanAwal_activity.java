@@ -34,7 +34,7 @@ public class TampilanAwal_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(TampilanAwal_activity.this, "Anda Berhasil Membuat", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(TampilanAwal_activity.this, menu_activity.class);
+                Intent intent = new Intent(TampilanAwal_activity.this, qrcode1_activity.class);
                 startActivity(intent);
             }
         });
