@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".RegisterasiActivity"
     android:background="#B47D55">
+
   <TextView
       android:id="@+id/textView5"
       android:layout_width="match_parent"
@@ -18,11 +19,14 @@
       android:textColor="#3E230F"
       android:textSize="34sp"
       android:textStyle="bold"
-      tools:layout_editor_absoluteX="-34dp"
-      tools:layout_editor_absoluteY="68dp"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
       tools:ignore="HardcodedText,MissingConstraints" />
 
   <LinearLayout
+      android:id="@+id/linearLayout3"
       android:layout_width="358dp"
       android:layout_height="400dp"
       android:background="@drawable/bg_tamp"
@@ -78,6 +82,7 @@
         android:id="@+id/repass"
         android:layout_width="304dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="50px"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Masukkan kembali kata sandi"
@@ -85,8 +90,7 @@
         android:textColor="#3E230F"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="371dp"
-        android:layout_marginBottom="50px"/>
+        tools:layout_editor_absoluteY="371dp" />
 
     <ImageButton
         android:id="@+id/Button_Daftar"
@@ -103,9 +107,9 @@
       android:id="@+id/imageView4"
       android:layout_width="477dp"
       android:layout_height="542dp"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
       app:srcCompat="@drawable/ellipse_2"
-      tools:layout_editor_absoluteX="-33dp"
-      tools:layout_editor_absoluteY="570dp"
-      tools:ignore="MissingConstraints" />
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="-33dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
