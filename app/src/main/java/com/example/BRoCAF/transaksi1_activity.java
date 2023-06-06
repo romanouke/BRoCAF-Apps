@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class orderP_activity extends AppCompatActivity {
+public class transaksi1_activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_order_pactivity);
+        setContentView(R.layout.activity_transaksi1);
     }
 }
