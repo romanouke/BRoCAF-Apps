@@ -21,7 +21,7 @@
         app:layout_constraintBottom_toTopOf="@+id/rectangleBoba"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintStart_toEndOf="@+id/backMainPage1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.969"
         tools:ignore="MissingConstraints" />
@@ -40,7 +40,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/matchaBoba"
+        android:id="@+id/MatchaBoba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -88,7 +88,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/rectangleBoba"
         app:layout_constraintEnd_toEndOf="@+id/rectangleBoba"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/matchaBoba"
+        app:layout_constraintStart_toEndOf="@+id/MatchaBoba"
         app:layout_constraintTop_toTopOf="@+id/rectangleBoba"
         app:layout_constraintVertical_bias="0.576"
         app:srcCompat="@drawable/img_8"
@@ -102,7 +102,7 @@
         app:layout_constraintEnd_toStartOf="@+id/popular"
         app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="@+id/rectangleBoba"
-        app:layout_constraintTop_toBottomOf="@+id/matchaBoba"
+        app:layout_constraintTop_toBottomOf="@+id/MatchaBoba"
         app:layout_constraintVertical_bias="0.118"
         app:srcCompat="@drawable/heart"
         tools:ignore="MissingConstraints" />
@@ -135,7 +135,7 @@
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/backButton"
+        android:id="@+id/backMainPage1"
         android:layout_width="28dp"
         android:layout_height="36dp"
         android:layout_marginStart="28dp"

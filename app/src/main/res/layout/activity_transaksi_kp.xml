@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Meja 1"
+        android:text="textView"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -64,9 +64,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
-        android:text="Devi:"
+        android:text="textView"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
-        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
@@ -75,9 +75,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="1 Nasi Aym Crp G XL"
+        android:text="textView"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.188"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
@@ -85,20 +85,20 @@
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2 Mango Sq Float"
+        android:text="textView"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumber3"
-        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
-        tools:layout_editor_absoluteY="249dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="258dp" />
 
     <TextView
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rp 13.500"
+        android:text="textView"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumber3"
-        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
@@ -153,13 +153,13 @@
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rp. 29.500"
+        android:text="textView"
         app:layout_constraintBottom_toTopOf="@+id/textView32"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.188"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
         app:layout_constraintTop_toBottomOf="@+id/textView30"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.125" />
 
     <View
         android:id="@+id/divider2"
@@ -199,7 +199,7 @@
         android:id="@+id/editTextNumber4"
         android:layout_width="194dp"
         android:layout_height="31dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="4dp"
         android:ems="5"
         android:inputType="number"
@@ -211,8 +211,8 @@
         android:id="@+id/editTextNumber5"
         android:layout_width="190dp"
         android:layout_height="31dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:ems="5"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
@@ -222,14 +222,14 @@
     <EditText
         android:id="@+id/editTextNumber6"
         android:layout_width="191dp"
-        android:layout_height="31dp"
+        android:layout_height="27dp"
         android:layout_marginEnd="4dp"
         android:ems="5"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber5"
-        app:layout_constraintVertical_bias="0.181"
+        app:layout_constraintVertical_bias="0.4"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
@@ -283,6 +283,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.888"
-        app:srcCompat="@drawable/path" />
+        app:srcCompat="@drawable/path"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

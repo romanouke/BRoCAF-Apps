@@ -80,14 +80,14 @@
 
     <AutoCompleteTextView
         android:id="@+id/autoCompleteTextView"
-        android:layout_width="346dp"
-        android:layout_height="32dp"
+        android:layout_width="344dp"
+        android:layout_height="37dp"
         android:text="Pembayaran dengan tunai"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView26"
         app:layout_constraintStart_toStartOf="@+id/imageView26"
         tools:ignore="MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="113dp" />
+        tools:layout_editor_absoluteY="108dp" />
 
     <TextView
         android:id="@+id/textView43"

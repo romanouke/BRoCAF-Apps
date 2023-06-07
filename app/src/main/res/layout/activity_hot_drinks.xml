@@ -37,7 +37,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/matchaBoba"
+        android:id="@+id/Choco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="128dp"
@@ -62,7 +62,7 @@
         tools:layout_editor_absoluteY="131dp" />
 
     <TextView
-        android:id="@+id/priceBoba"
+        android:id="@+id/priceChoco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -90,7 +90,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/ButtonPlusBoba"
+        android:id="@+id/ButtonChoco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -116,7 +116,7 @@
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/backMainPage2"
         android:layout_width="21dp"
         android:layout_height="36dp"
         android:background="@android:color/transparent"

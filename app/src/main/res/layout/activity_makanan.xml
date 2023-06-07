@@ -37,7 +37,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/matchaBoba"
+        android:id="@+id/nasiAyam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nasi Ayam Crispy Sambal"
@@ -58,12 +58,12 @@
         android:layout_marginBottom="48dp"
         android:text="Populer"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/priceBoba"
+        app:layout_constraintBottom_toTopOf="@+id/priceNasiAyam2"
         app:layout_constraintEnd_toStartOf="@+id/imgBoba"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/priceBoba"
+        android:id="@+id/priceNasiAyam2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rp. 29.500"
@@ -89,24 +89,24 @@
         android:id="@+id/favorite"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/priceBoba"
+        app:layout_constraintBottom_toTopOf="@+id/priceNasiAyam2"
         app:layout_constraintEnd_toStartOf="@+id/popular"
         app:layout_constraintHorizontal_bias="0.736"
         app:layout_constraintStart_toStartOf="@+id/rectangleBoba"
-        app:layout_constraintTop_toBottomOf="@+id/matchaBoba"
+        app:layout_constraintTop_toBottomOf="@+id/nasiAyam"
         app:layout_constraintVertical_bias="0.075"
         app:srcCompat="@drawable/heart"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/ButtonPlusBoba"
+        android:id="@+id/ButtonPlusNasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toEndOf="@+id/priceBoba"
+        app:layout_constraintStart_toEndOf="@+id/priceNasiAyam2"
         app:layout_constraintTop_toTopOf="@+id/rectangleBoba"
         app:srcCompat="@drawable/tmblplus"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -124,7 +124,7 @@
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/backMainPage3"
         android:layout_width="32dp"
         android:layout_height="48dp"
         android:background="@android:color/transparent"

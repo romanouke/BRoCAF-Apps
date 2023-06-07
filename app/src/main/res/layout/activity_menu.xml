@@ -58,7 +58,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/matchaBoba"
+        android:id="@+id/nasiAyam1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -105,17 +105,17 @@
         android:text="Populer"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/imgBoba"
-        app:layout_constraintTop_toBottomOf="@+id/matchaBoba"
+        app:layout_constraintTop_toBottomOf="@+id/nasiAyam1"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="51dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="132dp"
-        android:text="Populer"
-        android:textColor="@color/black"
+        android:layout_width="133dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="88dp"
+        android:text="Persediaan Habis"
+        android:textColor="@android:color/holo_red_dark"
         app:layout_constraintEnd_toStartOf="@+id/imageView15"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         tools:ignore="MissingConstraints" />
@@ -124,7 +124,7 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="132dp"
         android:text="Populer"
         android:textColor="@color/black"
@@ -133,7 +133,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/priceBoba"
+        android:id="@+id/priceNasiAyam2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="148dp"
@@ -148,17 +148,27 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/priceSquash1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 29.500"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="517dp" />
+
+    <TextView
+        android:id="@+id/textView46"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rp. 29.500"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/imageView11"
         app:layout_constraintEnd_toStartOf="@+id/imageView15"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="@+id/imageView11"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintVertical_bias="0.865"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -225,21 +235,7 @@
         app:layout_constraintEnd_toStartOf="@+id/popular"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="@+id/rectangleBoba"
-        app:layout_constraintTop_toBottomOf="@+id/matchaBoba"
-        app:srcCompat="@drawable/heart"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView14"
-        app:layout_constraintEnd_toStartOf="@+id/textView13"
-        app:layout_constraintHorizontal_bias="0.681"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/nasiAyam1"
         app:srcCompat="@drawable/heart"
         tools:ignore="MissingConstraints" />
 
@@ -257,7 +253,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/ButtonPlusBoba"
+        android:id="@+id/ButtonPlusNasi1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -309,7 +305,7 @@
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/backMainPage5"
         android:layout_width="32dp"
         android:layout_height="48dp"
         android:background="@android:color/transparent"

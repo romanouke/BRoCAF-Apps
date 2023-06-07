@@ -119,7 +119,7 @@
         tools:layout_editor_absoluteY="297dp" />
 
     <TextView
-        android:id="@+id/matchaBoba"
+        android:id="@+id/nasiAyam2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nasi Ayam Crispy Sambal"
@@ -139,7 +139,7 @@
         tools:layout_editor_absoluteY="323dp" />
 
     <TextView
-        android:id="@+id/priceBoba"
+        android:id="@+id/priceNasiAyam2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rp. 29.500"
