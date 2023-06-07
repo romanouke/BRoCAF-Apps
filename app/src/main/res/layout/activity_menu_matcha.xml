@@ -8,7 +8,7 @@
     tools:context=".menu_matcha_activity">
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/back_menu2"
         android:layout_width="71dp"
         android:layout_height="77dp"
         android:layout_marginTop="4dp"
@@ -25,17 +25,17 @@
         android:layout_width="390dp"
         android:layout_height="355dp"
         android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintBottom_toTopOf="@+id/mathca_boba"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/back_menu2"
         app:layout_constraintVertical_bias="0.218"
         app:srcCompat="@drawable/matcha"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/mathca_boba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Matcha Rocksaltche"
@@ -49,7 +49,7 @@
         tools:layout_editor_absoluteY="466dp" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/price_mathca_boba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -61,12 +61,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/mathca_boba"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton26"
+        android:id="@+id/add_pesanan2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -89,31 +89,31 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton27"
+        android:id="@+id/add_jml2"
         android:layout_width="41dp"
         android:layout_height="45dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="@+id/imageView17"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toStartOf="@+id/numb_mathca"
         app:layout_constraintStart_toStartOf="@+id/imageView17"
         app:layout_constraintTop_toTopOf="@+id/imageView17"
         app:srcCompat="@drawable/plus"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton28"
+        android:id="@+id/min_jml2"
         android:layout_width="47dp"
         android:layout_height="45dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintBottom_toBottomOf="@+id/numb_mathca"
         app:layout_constraintEnd_toEndOf="@+id/imageView17"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintStart_toEndOf="@+id/numb_mathca"
         app:layout_constraintTop_toTopOf="@+id/imageView17"
         app:srcCompat="@drawable/minus"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/numb_mathca"
         android:layout_width="30dp"
         android:layout_height="45dp"
         android:ems="10"

@@ -28,10 +28,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/meja_detail"
             android:layout_width="match_parent"
             android:layout_height="42dp"
-            android:text="Meja 1"
+            android:text="textView"
             android:textAlignment="center"
             android:textColor="#542D10"
             android:textSize="20sp"
@@ -44,35 +44,35 @@
             android:background="#3E230F" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/pesanan1"
             android:layout_width="match_parent"
             android:layout_height="26dp"
-            android:text="Nasi Ayam Crispy"
+            android:text="textView"
             android:textColor="#542D10"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/jml_pesanan1"
             android:layout_width="match_parent"
             android:layout_height="24dp"
-            android:text="1"
+            android:text="0"
             android:textColor="#542D10"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/price_pesanan1"
             android:layout_width="match_parent"
             android:layout_height="73dp"
-            android:text="Rp. 29.500"
+            android:text="textView"
             android:textColor="#542D10"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/total_price1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rp. 29.500"
+            android:text="0"
             android:textAlignment="viewEnd"
             android:textColor="#542D10"
             android:textStyle="bold" />
@@ -84,35 +84,35 @@
             android:background="#3E230F" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/pesanan2"
             android:layout_width="match_parent"
             android:layout_height="26dp"
-            android:text="Mango Squash Float"
+            android:text="textView"
             android:textColor="#542D10"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/jml_pesanan2"
             android:layout_width="match_parent"
             android:layout_height="24dp"
-            android:text="2"
+            android:text="0"
             android:textColor="#542D10"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/price_pesanan2"
             android:layout_width="match_parent"
             android:layout_height="73dp"
-            android:text="Rp. 13.500"
+            android:text="textView"
             android:textColor="#542D10"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView28"
+            android:id="@+id/total_price2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rp. 27.000"
+            android:text="0"
             android:textAlignment="viewEnd"
             android:textColor="#542D10"
             android:textStyle="bold" />
@@ -138,7 +138,7 @@
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
+        android:id="@+id/nama_pelanggan"
         android:layout_width="362dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
@@ -150,35 +150,36 @@
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/save_nama_pelanggan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton16"
+        app:layout_constraintBottom_toTopOf="@+id/bayar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nama_pelanggan"
         app:layout_constraintVertical_bias="0.203"
         app:srcCompat="@drawable/simpan"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/back_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="88dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton16"
+        app:layout_constraintEnd_toStartOf="@+id/bayar"
         app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/save_nama_pelanggan"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/kmbli"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/bayar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"

@@ -182,7 +182,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/matchaBoba"
+        android:id="@+id/nasiAyam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

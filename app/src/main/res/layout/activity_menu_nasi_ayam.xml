@@ -8,7 +8,7 @@
     tools:context=".menu_nasi_ayam_activity">
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/back_menu1"
         android:layout_width="71dp"
         android:layout_height="77dp"
         android:background="@android:color/transparent"
@@ -23,16 +23,16 @@
         android:id="@+id/imageView10"
         android:layout_width="405dp"
         android:layout_height="363dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintBottom_toTopOf="@+id/nasi_ayam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/back_menu1"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/foodhlm"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/nasi_ayam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nasi Ayam Crispy Sambal Geprek XL"
@@ -46,10 +46,11 @@
         tools:layout_editor_absoluteY="466dp" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/price_nasi_ayam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="40dp"
         android:text="Rp 29.500"
         android:textColor="#000000"
         android:textSize="17sp"
@@ -58,12 +59,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/nasi_ayam"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton26"
+        android:id="@+id/add_pesanan1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -84,13 +85,13 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton27"
+        android:id="@+id/add_jml1"
         android:layout_width="41dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="@+id/imageView17"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toStartOf="@+id/numb_nasi_ayam"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView17"
         app:layout_constraintTop_toTopOf="@+id/imageView17"
@@ -99,19 +100,19 @@
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton28"
+        android:id="@+id/min_jml1"
         android:layout_width="47dp"
         android:layout_height="45dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="@+id/imageView17"
         app:layout_constraintEnd_toEndOf="@+id/imageView17"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintStart_toEndOf="@+id/numb_nasi_ayam"
         app:layout_constraintTop_toTopOf="@+id/imageView17"
         app:srcCompat="@drawable/minus"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/numb_nasi_ayam"
         android:layout_width="30dp"
         android:layout_height="45dp"
         android:ems="10"
