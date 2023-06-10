@@ -1,8 +1,9 @@
 package com.example.BRoCAF;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
 
 public class BobaActivity extends AppCompatActivity {
 
@@ -11,4 +12,5 @@ public class BobaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boba);
     }
+
 }
