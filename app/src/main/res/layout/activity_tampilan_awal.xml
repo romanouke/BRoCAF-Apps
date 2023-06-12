@@ -4,96 +4,192 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B47D55"
-    android:textAlignment="center"
+    android:background="@color/white"
     tools:context=".TampilanAwal_activity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="247dp"
-        android:layout_height="168dp"
-        android:layout_marginEnd="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.563"
-        app:srcCompat="@drawable/cloud"
-        tools:ignore="ContentDescription,MissingConstraints" />
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="413dp"
+    android:layout_height="461dp"
+    android:background="#B47D55"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button2"
+    app:layout_constraintVertical_bias="1.0"
+    tools:ignore="MissingConstraints"></LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="90dp"
-        android:layout_height="87dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401"
-        app:srcCompat="@drawable/panda1"
-        tools:ignore="ContentDescription,MissingConstraints" />
+<TextView
+    android:id="@+id/boba"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:letterSpacing="0.02"
+    android:text="KATEGORI"
+    android:textColor="#542D10"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/Button_Boba"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:letterSpacing="-0.02"
-        android:text="Halo, \nSelamat Datang"
-        android:textColor="#3E230F"
-        android:textSize="60px"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.534"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.463"
-        tools:ignore="HardcodedText,MissingConstraints,PxUsage" />
+<ImageButton
+    android:id="@+id/Button_Boba"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:background="@color/white"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/boba"
+    tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+    tools:layout_editor_absoluteY="123dp" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="360dp"
-        android:layout_height="260dp"
-        android:layout_marginBottom="184dp"
-        android:background="@drawable/bg_tamp"
-        android:gravity="center|center_horizontal"
-        android:orientation="vertical"
-        app:circularflow_radiusInDP="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,VisualLintBounds">
+<ImageButton
+    android:id="@+id/Button_Food"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:background="@color/white"
+    app:layout_constraintBottom_toTopOf="@+id/button2"
+    app:layout_constraintStart_toEndOf="@+id/Button_Boba"
+    app:layout_constraintTop_toBottomOf="@+id/boba"
+    app:srcCompat="@drawable/food"
+    tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Masuk Sebagai"
-            android:textAlignment="center"
-            android:textColor="#3E230F"
-            android:textSize="60px"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,PxUsage" />
+<ImageButton
+    android:id="@+id/Button_Drink"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:layout_constraintBottom_toTopOf="@+id/button2"
+    app:layout_constraintEnd_toStartOf="@+id/Button_Hotdrink"
+    app:layout_constraintStart_toEndOf="@+id/Button_Food"
+    app:layout_constraintTop_toBottomOf="@+id/boba"
+    app:srcCompat="@drawable/drink"
+    tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/Button_Pelanggan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFBA88"
-            app:srcCompat="@drawable/tombol1p"
-            tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck" />
+<ImageButton
+    android:id="@+id/Button_Hotdrink"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="28dp"
+    android:background="@color/white"
+    app:layout_constraintBottom_toTopOf="@+id/button2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/boba"
+    app:srcCompat="@drawable/hotdrink"
+    tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/Button_Pemilik"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFBA88"
-            app:srcCompat="@drawable/tombol1k"
-            tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck" />
+<TextView
+    android:id="@+id/textView8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:letterSpacing="0.02"
+    android:text="MENU"
+    android:textColor="#542D10"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+    app:layout_constraintEnd_toStartOf="@+id/button2"
+    app:layout_constraintHorizontal_bias="0.075"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Button_Boba"
+    app:layout_constraintVertical_bias="1.0"
+    tools:ignore="MissingConstraints" />
 
-    </LinearLayout>
+<ImageView
+    android:id="@+id/rectangleBoba"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/bgputih"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteY="283dp" />
+
+<ImageView
+    android:id="@+id/imgBoba"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/foodhlm"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="254dp"
+    tools:layout_editor_absoluteY="297dp" />
+
+<TextView
+    android:id="@+id/nasiAyam2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nasi Ayam Crispy Sambal"
+    android:textColor="@color/black"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="43dp"
+    tools:layout_editor_absoluteY="297dp" />
+
+<TextView
+    android:id="@+id/popular"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Populer"
+    android:textColor="@color/black"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="62dp"
+    tools:layout_editor_absoluteY="323dp" />
+
+<TextView
+    android:id="@+id/priceNasiAyam2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Rp. 29.500"
+    android:textColor="@color/black"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="43dp"
+    tools:layout_editor_absoluteY="382dp" />
+
+<ImageButton
+    android:id="@+id/Button_tambahHP"
+    android:layout_width="40dp"
+    android:layout_height="41dp"
+    android:background="@android:color/transparent"
+    android:minWidth="48dp"
+    android:minHeight="48dp"
+    app:layout_constraintEnd_toEndOf="@+id/rectangleBoba"
+    app:srcCompat="@drawable/tmblplus"
+    tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+    tools:layout_editor_absoluteY="390dp" />
+
+<ImageView
+    android:id="@+id/imageView9"
+    android:layout_width="20dp"
+    android:layout_height="19dp"
+    android:background="@android:color/transparent"
+    app:srcCompat="@drawable/heart"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="41dp"
+    tools:layout_editor_absoluteY="323dp" />
+
+<ImageButton
+    android:id="@+id/Button_Keranjang"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:srcCompat="@drawable/tmblblj"
+    tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:text="Lihat semua"
+    android:textAllCaps="false"
+    android:textColor="#542D10"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="285dp"
+    tools:layout_editor_absoluteY="224dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

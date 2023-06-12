@@ -1,9 +1,14 @@
 package com.example.BRoCAF;
 
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> e15d9b35afcd6f39c6573dd6df98702a6d451437
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
