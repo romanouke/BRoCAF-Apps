@@ -9,66 +9,30 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageButton ButtonBoba;
-    private ImageButton ButtonFood;
-    private ImageButton ButtonDrink;
-    private ImageButton ButtonHotdrink;
-    private ImageButton ButtonTambahHP;
-    private ImageButton ButtonKeranjang;
+    private ImageButton btnPelanggan, btnKaryawan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ButtonBoba = findViewById(R.id.Button_Boba);
-        ButtonFood = findViewById(R.id.Button_Food);
-        ButtonDrink = findViewById(R.id.Button_Drink);
-        ButtonHotdrink = findViewById(R.id.Button_Hotdrink);
-        ButtonTambahHP = findViewById(R.id.Button_tambahHP);
-        ButtonKeranjang = findViewById(R.id.Button_Keranjang);
+        btnPelanggan = findViewById(R.id.Button_Pelanggan);
+        btnKaryawan = findViewById(R.id.Button_Pemilik);
 
-        ButtonBoba.setOnClickListener(new View.OnClickListener() {
+        btnKaryawan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BobaActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
-        ButtonFood.setOnClickListener(new View.OnClickListener() {
+        btnPelanggan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MakananActivity.class);
-                startActivity(intent);
-            }
-        });
-        ButtonDrink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SquashAndFloatActivity.class);
-                startActivity(intent);
-            }
-        });
-        ButtonHotdrink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, HotDrinksActivity.class);
-                startActivity(intent);
-            }
-        });
-//        BELUM
-//        ButtonTambahHP.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, )
-//            }
-//        });
-        ButtonKeranjang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, menu_activity.class);
+                Intent intent = new Intent(MainActivity.this, qrcode1_activity.class);
                 startActivity(intent);
             }
         });
     }
+
 }

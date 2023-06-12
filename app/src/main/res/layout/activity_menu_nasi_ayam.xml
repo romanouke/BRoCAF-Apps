@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/tmbl_tmbhP"
+        app:srcCompat="@drawable/tmbl_tmbh_p"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageView
