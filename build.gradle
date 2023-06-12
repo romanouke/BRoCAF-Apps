@@ -1,11 +1,7 @@
 buildscript {
     dependencies {
-<<<<<<< HEAD
-        classpath 'com.google.gms:google-services:4.3.10'
-        classpath 'com.android.tools.build:gradle:7.4.2'
-=======
         classpath 'com.google.gms:google-services:4.3.14'
->>>>>>> e15d9b35afcd6f39c6573dd6df98702a6d451437
+        classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
