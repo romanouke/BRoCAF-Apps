@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,7 +26,7 @@ public class qrcode1_activity extends AppCompatActivity {
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 200;
     private static final String TAG = "qrcode1_activity";
 
-    private Button scanButton;
+    private ImageButton scanButton;
     private TextView resultTextView;
 
     private DatabaseReference database;
@@ -39,63 +40,71 @@ public class qrcode1_activity extends AppCompatActivity {
         scanButton = findViewById(R.id.Button_Scan);
         resultTextView = findViewById(R.id.textView3);
 
-        database = FirebaseDatabase.getInstance().getReference();
-
         scanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (ContextCompat.checkSelfPermission(qrcode1_activity.this, Manifest.permission.CAMERA)
-                        == PackageManager.PERMISSION_GRANTED) {
-                    startQRCodeScan();
-                } else {
-                    ActivityCompat.requestPermissions(qrcode1_activity.this,
-                            new String[]{Manifest.permission.CAMERA},
-                            CAMERA_PERMISSION_REQUEST_CODE);
-                }
+                Intent intent = new Intent(qrcode1_activity.this, TampilanAwal_activity.class);
+                startActivity(intent);
             }
         });
-    }
 
-    private void startQRCodeScan() {
-        IntentIntegrator integrator = new IntentIntegrator(this);
-        integrator.setOrientationLocked(false);
-        integrator.initiateScan();
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-        if (result != null) {
-            if (result.getContents() != null) {
-                String scannedData = result.getContents();
-                resultTextView.setText("Scan result: " + scannedData);
-                saveDataToDatabase(scannedData);
-                Intent intent = new Intent(qrcode1_activity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            } else {
-                // Tidak ada QR code yang ditemukan
-                Log.d(TAG, "No QR code found");
-            }
-        } else {
-            super.onActivityResult(requestCode, resultCode, data);
-        }
-    }
-
-    private void saveDataToDatabase(String data) {
-        String entryId = database.child("entries").push().getKey();
-        database.child("entries").child(entryId).setValue(data);
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == CAMERA_PERMISSION_REQUEST_CODE) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                startQRCodeScan();
-            } else {
-                Log.d(TAG, "Camera permission denied");
-            }
-        }
-    }
+//        database = FirebaseDatabase.getInstance().getReference();
+//
+//        scanButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (ContextCompat.checkSelfPermission(qrcode1_activity.this, Manifest.permission.CAMERA)
+//                        == PackageManager.PERMISSION_GRANTED) {
+//                    startQRCodeScan();
+//                } else {
+//                    ActivityCompat.requestPermissions(qrcode1_activity.this,
+//                            new String[]{Manifest.permission.CAMERA},
+//                            CAMERA_PERMISSION_REQUEST_CODE);
+//                }
+//            }
+//        });
+//    }
+//
+//    private void startQRCodeScan() {
+//        IntentIntegrator integrator = new IntentIntegrator(this);
+//        integrator.setOrientationLocked(false);
+//        integrator.initiateScan();
+//    }
+//
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+//        if (result != null) {
+//            if (result.getContents() != null) {
+//                String scannedData = result.getContents();
+//                resultTextView.setText("Scan result: " + scannedData);
+//                saveDataToDatabase(scannedData);
+//                Intent intent = new Intent(qrcode1_activity.this, MainActivity.class);
+//                startActivity(intent);
+//                finish();
+//            } else {
+//                // Tidak ada QR code yang ditemukan
+//                Log.d(TAG, "No QR code found");
+//            }
+//        } else {
+//            super.onActivityResult(requestCode, resultCode, data);
+//        }
+//    }
+//
+//    private void saveDataToDatabase(String data) {
+//        String entryId = database.child("entries").push().getKey();
+//        database.child("entries").child(entryId).setValue(data);
+//    }
+//
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+//        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+//        if (requestCode == CAMERA_PERMISSION_REQUEST_CODE) {
+//            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//                startQRCodeScan();
+//            } else {
+//                Log.d(TAG, "Camera permission denied");
+//            }
+//        }
+  }
 }

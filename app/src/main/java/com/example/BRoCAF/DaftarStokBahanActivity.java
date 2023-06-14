@@ -1,5 +1,6 @@
 package com.example.BRoCAF;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -50,6 +51,25 @@ public class DaftarStokBahanActivity extends AppCompatActivity {
         subtractButton[5] = findViewById(R.id.subtractButton6);
         subtractButton[6] = findViewById(R.id.subtractButton7);
         subtractButton[7] = findViewById(R.id.subtractButton8);
+
+        ImageButton tmplnkpButton = findViewById(R.id.imageButton5);
+        ImageButton reportButton = findViewById(R.id.imageButton9);
+
+        tmplnkpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DaftarStokBahanActivity.this, tampilan_utama_kp_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        reportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DaftarStokBahanActivity.this, report_in_activity.class);
+                startActivity(intent);
+            }
+        });
 
         for(int i = 0; i < itemValues.length; i++) {
             itemValues[i] = 0;

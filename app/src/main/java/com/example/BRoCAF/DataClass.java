@@ -41,7 +41,4 @@ public class DataClass {
     public void setRepass(String repass) {
         this.repass = repass;
     }
-    public DataClass(){
-
-    }
 }
