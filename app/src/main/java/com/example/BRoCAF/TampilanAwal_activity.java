@@ -3,6 +3,7 @@ package com.example.BRoCAF;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ public class TampilanAwal_activity extends AppCompatActivity {
     private ImageButton ButtonDrink;
     private ImageButton ButtonHotdrink;
     private ImageButton ButtonTambahHP;
+    Button tmblMenu;
     private ImageButton ButtonKeranjang;
 
     @Override
@@ -27,6 +29,7 @@ public class TampilanAwal_activity extends AppCompatActivity {
         ButtonHotdrink = findViewById(R.id.Button_Hotdrink);
         ButtonTambahHP = findViewById(R.id.Button_tambahHP);
         ButtonKeranjang = findViewById(R.id.Button_Keranjang);
+        tmblMenu = findViewById(R.id.button2);
 
         ButtonBoba.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,17 +59,17 @@ public class TampilanAwal_activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//        BELUM
-//        ButtonTambahHP.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, )
-//            }
-//        });
-        ButtonKeranjang.setOnClickListener(new View.OnClickListener() {
+        tmblMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(TampilanAwal_activity.this, menu_activity.class);
+                startActivity(intent);
+            }
+        });
+        ButtonKeranjang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TampilanAwal_activity.this, orderP_activity.class);
                 startActivity(intent);
             }
         });

@@ -1,26 +1,36 @@
 {
   "project_info": {
-    "project_number": "395726083099",
-    "project_id": "brocaf-30f68",
-    "storage_bucket": "brocaf-30f68.appspot.com"
+    "project_number": "449952424184",
+    "project_id": "brocaf-9b90c",
+    "storage_bucket": "brocaf-9b90c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:395726083099:android:8468332831ff4dbbbf54be",
+        "mobilesdk_app_id": "1:449952424184:android:777309de8904bf12239b0d",
         "android_client_info": {
           "package_name": "com.example.BRoCAF"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "449952424184-vls1919bu0o84h4dlfue14tj1dj5iv78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyAOynquqrqCtJEQQhhaB8Wh-vTyJYfba8o"
+          "current_key": "AIzaSyBXZe-LIgDosrwgn0Ib6h_82LftYoR7O-Q"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449952424184-vls1919bu0o84h4dlfue14tj1dj5iv78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

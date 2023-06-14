@@ -33,9 +33,11 @@
       android:gravity="center|center_horizontal"
       android:orientation="vertical"
       app:circularflow_radiusInDP="20dp"
-      tools:ignore="MissingConstraints,VisualLintBounds"
-      tools:layout_editor_absoluteX="25dp"
-      tools:layout_editor_absoluteY="170dp">
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints,VisualLintBounds">
 
     <EditText
         android:id="@+id/username"

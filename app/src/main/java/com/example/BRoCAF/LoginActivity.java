@@ -1,30 +1,29 @@
 package com.example.BRoCAF;
-/*made together */
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
 
     EditText loginUsername, loginPassword;
-    Button loginButton;
+    ImageButton loginButton;
+    Button btnDaftar;
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,24 +31,31 @@ public class LoginActivity extends AppCompatActivity {
 
         loginUsername = findViewById(R.id.loginUsername);
         loginPassword = findViewById(R.id.loginPassword);
-        loginButton = findViewById((R.id.saveLogin));
+        loginButton = findViewById(R.id.saveLogin);
+        btnDaftar = findViewById(R.id.button);
+
+        btnDaftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, RegisterasiActivity.class);
+                startActivity(intent);
+            }
+        });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(validateUsername() | !validatePassword()){
-
-                }else{
+                if (validateUsername() && validatePassword()) {
                     checkUser();
                 }
             }
         });
     }
 
-    public Boolean validateUsername(){
+    public Boolean validateUsername() {
         String val = loginUsername.getText().toString();
-        if(val.isEmpty()){
-            loginUsername.setError("Username harus di isi!");
+        if (val.isEmpty()) {
+            loginUsername.setError("Username harus diisi!");
             return false;
         } else {
             loginUsername.setError(null);
@@ -57,18 +63,18 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    public Boolean validatePassword(){
+    public Boolean validatePassword() {
         String val = loginPassword.getText().toString();
-        if(val.isEmpty()){
-            loginPassword.setError("Password harus di isi!");
+        if (val.isEmpty()) {
+            loginPassword.setError("Password harus diisi!");
             return false;
-        }else{
+        } else {
             loginPassword.setError(null);
             return true;
         }
     }
 
-    public void checkUser(){
+    public void checkUser() {
         String userUsername = loginUsername.getText().toString().trim();
         String userPassword = loginPassword.getText().toString().trim();
 
@@ -84,29 +90,29 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (passwordFromDB.equals(userPassword)) {
                         String nameFromDB = snapshot.child(userUsername).child("name").getValue(String.class);
-                        String emailFromDB = snapshot.child(userUsername).child("emai").getValue(String.class);
+                        String emailFromDB = snapshot.child(userUsername).child("email").getValue(String.class);
                         String usernameFromDB = snapshot.child(userUsername).child("username").getValue(String.class);
 
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-
+                        Intent intent = new Intent(LoginActivity.this, tampilan_utama_kp_activity.class);
                         intent.putExtra("name", nameFromDB);
                         intent.putExtra("email", emailFromDB);
                         intent.putExtra("username", usernameFromDB);
                         intent.putExtra("password", passwordFromDB);
 
                         startActivity(intent);
-                    }else{
-                        loginPassword.setError("Salah Password");
+                    } else {
+                        loginPassword.setError("Password salah");
                         loginPassword.requestFocus();
                     }
-                }else {
+                } else {
                     loginUsername.setError("User tidak ditemukan");
                     loginUsername.requestFocus();
                 }
             }
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                // Handle database error
             }
         });
     }

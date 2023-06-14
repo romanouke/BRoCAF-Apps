@@ -79,7 +79,6 @@
             tools:ignore="HardcodedText,PxUsage" />
 
         <ImageButton
-            android:onClick="button_next"
             android:id="@+id/Button_Pelanggan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,7 +87,6 @@
             tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:onClick="button_next"
             android:id="@+id/Button_Pemilik"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

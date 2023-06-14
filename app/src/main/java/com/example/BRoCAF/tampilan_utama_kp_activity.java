@@ -17,7 +17,7 @@ public class tampilan_utama_kp_activity extends AppCompatActivity {
         ImageButton reportButton = findViewById(R.id.imageButton9);
         ImageButton dftrstckButton = findViewById(R.id.imageButton11);
 
-        reportButton.setOnClickListener(new View.OnClickListener() {
+        dftrstckButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(tampilan_utama_kp_activity.this, DaftarStokBahanActivity.class);
